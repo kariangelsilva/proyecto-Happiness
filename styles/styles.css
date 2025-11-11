@@ -7,58 +7,233 @@ header{
     justify-content:space-between;
     padding: 10px 100px;
 }
+header img {
+    width: 100px;
+}
 header .hola{
     display: flex;
-    gap: 30px;
-    font-size: 18px;
+    gap: 40px;
+    font-size: 21px;
     list-style: none;
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
-    align-content: flex-end;
+    margin-top: 25px;
+}
+h1{
+    font-size: 150px;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    line-height: 120px;
+}
+h2{
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    line-height: 70px;
+    font-size:80px ;
+    color: #020202;
 }
 p{
-    font-size: 20px;
+    font-size: 22px;
     color: #222; 
     line-height: 1.4;
     font-family: "Montserrat", sans-serif;
     font-weight:550;
 }
-.container1{
-    padding: 100px 100px;
+.container1 {
+    padding: 100px 100px 400px;
     display: flex;
-
 }
 .container1 img{
-    width:80%;
+    width:100%;
 }
 .contai1{
-padding: 0px 150px;
-width: 70%;
-align-content: center;
-
+    padding: 0px 150px;
+    width: 70%;
+    align-content: center;
 }
 .contai1 button{
     margin-top: 50px;
 }
 .contai1 p{
     margin-top: 50px;
-}
-.container1 h1{
-    font-size: 150px;
-    font-family: "Bebas Neue", sans-serif;
-    font-weight: 400;
-    line-height: 120px;
-}
-.container2{
-    display: flex;
-}
 
+}
 button{
     color: #000000;
     border: none;
     background-color: #F4C400;
-    width: 150px;
-    height: 40px;
+    width: 230px;
+    height: 60px;
+    font-size: 25px;
+    font-weight: bold;
+}
+/*CONTAINER DOS*/
+.container2{
+    position: absolute;
+    top: 130%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10; /* ¡ENCIMA DE TODO! */
+    background-color: rgb(223, 217, 217);
+    width: 80%;
+    display: flex;
+}
+.container2 img{
+    padding: 100px 0px 1px 150px ;
+    width: 20%;
+    height:60%; 
+}
+.contai2{
+    width: 25%;
+    padding: 100px 100px;
+}
+.contai2 h2{
+    font-size: 80px;;
+}
+.contai2 button{
+    background-color:rgb(223, 217, 217);
+    text-align:start;
+}
+/*CONTAINER 4*/
+.container3{
+    height:70rem;
+    padding: 420px 0px 0px 100px;
+    background-color:#F4C400;
+}
+.container3 h1{
+    font-size: 130px;
+    width: 40%;
+    padding-left:30px;
+}
+.btn { 
+    background-color: #000000;
+    color: #ffffff;
+    margin-top: 50px;
+}
+.container3 .content img{
+    width: 270%;
+}
+.content{
+    display: flex;
+    padding:0px 100px 10px 10px;
+}
+.contai{
+    padding: 30px;
+}
+
+/*CONTENEDOR 4*/
+.container4{
+    display: flex;
+    width: 90%;
+    background-color: rgba(231, 231, 231, 0.986);
+    margin: 100px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.736);
+    height: 55rem;
+}
+.content4{
+    display: flex;
+    justify-content: center;   
+    align-items: center;     
+}
+.contai4{
+    display: flex;  flex-direction: column;
+    width: 30%;
+    padding: 100px ;
+}
+.contai4 h2{
+    font-size: 110px;
+    color: #F4C400;
+    margin-bottom: 50px;
+}
+
+.contai4  .imagen{
+    padding-left:220px;
+    width: 60%;
+}
+
+/*CONTAINER5*/
+.content5{
+    display: flex; flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 40px 20px;
+    gap: 15px;
+    width: 100%;
+}
+.container5 .content5 h2{
+    color: #F4C400;
+}
+.content5 img{
+    width: 70%;
+}
+ .container5 .content5 p{
+    width: 70%;
+    font-size: 20px;
+    color: #ffffff;
+}
+.container5, .container8{
+    display: flex;
+    justify-content: center;   
+    align-items: center;   
+    background-color: #000000; 
+}
+/*CONTAINER 6*/
+.imgs{
+    max-width: 55%;
+    height: 800px;
+    object-fit: cover;     /* ¡RECORTA sin deformar! */
+  object-position: center; /* Centra el recorte */
+}
+.container6{
+    padding: 120px;
+display: flex;
+}
+/*CONTENEDOR 7*/
+.container7 {
+  display: flex;
+  padding: 110px;
+  background-color: #cecdcd;
+}
+.container7 img{
+width: 120rem;
+}
+.contai7{
+     padding: 100px 100px;
+    width: 90%;
+    align-content: center;
+}
+.contai7 p{
+    padding: 40px 0px 40px 0px ;
+}
+.contai7 h2{
+ width: 80%;
+ color: #000000;
+ font-size: 100px;
+ line-height: 100px;
+}
+.container8{  
+    background-color:#F4C400
+}
+.container8 .content5 img{
+    width:80%;
+}
+.lista {
+    display: flex;
     font-size: 20px;
     font-weight: bold;
+    color:#F4C400;
+    font-family: "Montserrat", sans-serif;
+    list-style-type: none;
+}
+ul{ list-style-type: none;}
+
+.container9{
+    background-color: #000000;
+}
+hr{
+    border: none;
+    border-top: 1px solid #333;
+    margin: 0 auto 40px;
+    width: 90%;
+    max-width: 1200px;
 }

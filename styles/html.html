@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Superponer Contenedor sobre Gráficos</title>
+ <div class="container3">
+  <h2>WE CAN HELP YOU TO BE HAPPY</h2>
+  
+  <article class="content">
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+      Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel
+    </p>
+    <button>Read More</button>
+  </article>
+
+  <img src="/assets/images/img02.png" alt="Grupo de personas felices">
+</div>
+<style>
+  .container3 {
+  align-items: flex-start;
+  justify-content: space-between;
+  background-color: #ffc107;
+  padding: 50px 60px;
+  gap: 40px;
+  flex-wrap: wrap;
+  position: relative;
+  overflow: hidden;
+}
+
+.container3 h2 {
+  font-size: 3.8rem;
+  font-weight: 900;
+  color: #000;
+  margin: 0;
+  line-height: 1;
+  text-transform: uppercase;
+  flex: 1;
+  min-width: 300px;
+}
+
+.content {
+  flex: 1;
+  min-width: 300px;
+  margin-top: 10px;
+  display: flex;
+}
+
+.content p {
+  font-size: 1rem;
+  color: #000;
+  margin: 0 0 20px 0;
+  line-height: 1.6;
+  max-width: 400px;
+}
+
+.content button {
+  background-color: #000;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.content button:hover {
+  background-color: #333;
+}
+
+.container3 img {
+  width: 500px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 0;
+  flex-shrink: 0;
+  margin-top: -80px; /* Sube la imagen para que se superponga un poco */
+  align-self: flex-start;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .container3 {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 20px;
+  }
+
+  .container3 h2 {
+    font-size: 2.8rem;
+    text-align: center;
+  }
+
+  .content {
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .content p {
+    max-width: 100%;
+  }
+
+  .container3 img {
+    width: 100%;
+    max-width: 500px;
+    margin-top: 20px;
+  }
+}
+</style>
+</body>
+</html>
